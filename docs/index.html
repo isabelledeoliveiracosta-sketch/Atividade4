@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="teste_files/libs/clipboard/clipboard.min.js"></script>
+<script src="teste_files/libs/quarto-html/tabby.min.js"></script>
+<script src="teste_files/libs/quarto-html/popper.min.js"></script>
+<script src="teste_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="teste_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="teste_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="teste_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <meta name="author" content="Isabelle de Oliveira Costa (isabelle_costa@id.uff.br)   Ilídio do Nascimento Alves Junior (ilidiojunior@id.uff.br)">
+  <title>Resiliência, Depressão e Autoeficácia na Enfermagem</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="teste_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="teste_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="teste_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="custom.css">
+  <link href="teste_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="teste_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="teste_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="teste_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="Capa3.jpg" data-background-size="cover" class="quarto-title-block center">
+  <h1 class="title"><strong>Resiliência, Depressão e Autoeficácia na Enfermagem</strong></h1>
+  <p class="subtitle"><strong>Análise Estatística de Fatores Psicológicos na Pandemia de COVID-19</strong></p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Isabelle de Oliveira Costa (isabelle_costa@id.uff.br) <br> Ilídio do Nascimento Alves Junior (ilidiojunior@id.uff.br)
+</div>
+        <p class="quarto-title-affiliation">
+            Universidade Federal Fluminense
+          </p>
+    </div>
+</div>
+
+</section>
+<section>
+<section id="introdução" class="title-slide slide level1 center">
+<h1>INTRODUÇÃO</h1>
+
+</section>
+<section id="motivação-e-objetivos" class="slide level2">
+<h2>Motivação e Objetivos</h2>
+<div class="box-purple">
+<p><strong>Motivação da Pesquisa:</strong></p>
+<ul>
+<li>Alto nível de estresse laboral na enfermagem intensificado pelas adversidades caóticas da pandemia de COVID-19 (como falta de EPIs e sobrecarga operacional).</li>
+<li>Necessidade de compreender fatores protetivos (resiliência e autoeficácia) contra o adoecimento mental e a depressão na linha de frente.</li>
+</ul>
+</div>
+<div class="box-purple">
+<p><strong>Objetivo Geral:</strong><br>
+Analisar os níveis de resiliência, depressão e autoeficácia em profissionais de enfermagem no Brasil e avaliar como a resiliência e a autoeficácia impactam os níveis de depressão.</p>
+</div>
+</section>
+<section id="coleta-da-amostra" class="slide level2">
+<h2>Coleta da Amostra</h2>
+<div class="box-purple">
+<p><strong>Desenho Amostral e Coleta:</strong></p>
+<ul>
+<li>Estudo transversal analítico com dados coletados entre outubro e dezembro de 2020.</li>
+<li>Formato de questionário eletrônico (<em>SurveyMonkey</em>) divulgado em mídias sociais (Facebook, Instagram, Twitter, WhatsApp) e e-mails.</li>
+<li>Critérios de inclusão: Enfermeiros, técnicos e auxiliares que atuavam na assistência direta à saúde há pelo menos 6 meses.</li>
+</ul>
+<p><strong>Amostra Final:</strong><br>
+<span class="math inline">\(N = 8.792\)</span> profissionais de enfermagem em todas as regiões do Brasil</p>
+</div>
+</section></section>
+<section>
+<section id="metodologia-estatística" class="title-slide slide level1 center">
+<h1>METODOLOGIA ESTATÍSTICA</h1>
+
+</section>
+<section id="variáveis-analisadas" class="slide level2">
+<h2>Variáveis Analisadas</h2>
+<div class="box-blue">
+<p><strong>1. Variáveis de Desfecho (Psicológicas):</strong></p>
+<ul>
+<li><strong>Resiliência:</strong> Escore contínuo obtido pela média simples da Escala Breve de Coping Resiliente.</li>
+<li><strong>Depressão:</strong> Escore contínuo (média ponderada do Fator 1 do instrumento QSG-12).</li>
+<li><strong>Autoeficácia:</strong> Escore contínuo (média ponderada do Fator 2 do instrumento QSG-12).</li>
+</ul>
+<p><strong>2. Fatores de Exposição (Sociodemográficos e Laborais):</strong></p>
+<ul>
+<li>Categoria Profissional, Sexo, Faixa Etária, Região do Brasil, Cor da Pele, Estado Conjugal, Diagnóstico de COVID-19 e Atuação em Hospital de Campanha.</li>
+</ul>
+</div>
+</section>
+<section id="instrumentos-de-medida" class="slide level2">
+<h2>Instrumentos de Medida</h2>
+<div class="box-blue">
+<p><strong>Escala Breve de Coping Resiliente (BRCS):</strong></p>
+<ul>
+<li><strong>Objetivo:</strong> Avaliar a capacidade do indivíduo de lidar com o estresse e se adaptar a situações adversas de forma positiva.</li>
+<li><strong>Estrutura:</strong> Composta por <strong>4 itens</strong> com respostas em escala do tipo <em>Likert</em> de 5 pontos (1 = “quase nunca” a 5 = “quase sempre”).</li>
+<li><strong>Pontuação:</strong> Calculada pela <strong>média simples</strong> dos itens.
+<ul>
+<li>Pontuação <span class="math inline">\(&lt; 13\)</span>: Indica <strong>baixa resiliência</strong>.</li>
+<li>Pontuação <span class="math inline">\(&gt; 17\)</span>: Indica <strong>forte resiliência</strong>.</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="instrumentos-de-medida-1" class="slide level2">
+<h2>Instrumentos de Medida</h2>
+<div class="box-blue">
+<p><strong>Questionário de Saúde Geral (QSG-12):</strong></p>
+<ul>
+<li><strong>Objetivo:</strong> Avaliar a saúde mental geral e rastrear sintomas psiquiátricos não psicóticos.</li>
+<li><strong>Estrutura:</strong> Versão reduzida com <strong>12 itens</strong> aplicados em escala <em>Likert</em> de 4 pontos (0 = “nem um pouco” a 3 = “muito mais que o habitual”).</li>
+<li><strong>Estrutura Fatorial:</strong> No estudo, a Análise Fatorial Exploratória (AFE) extraiu 2 fatores oblíquos com médias ponderadas:
+<ul>
+<li><strong>Fator 1 (Depressão):</strong> Composto por 6 itens (itens 2, 5, 6, 9, 10 e 11).</li>
+<li><strong>Fator 2 (Autoeficácia):</strong> Composto por 6 itens (itens 1, 3, 4, 7, 8 e 12).</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="testes-inferenciais-aplicados" class="slide level2">
+<h2>Testes Inferenciais Aplicados</h2>
+<p>Foram utilizados:</p>
+<div class="box-red">
+<p><strong>Teste <span class="math inline">\(t\)</span> de Student para Amostras Independentes:</strong></p>
+<p>Aplicado para comparar as médias de duas populações independentes (ex: Comparação entre Sexo Masculino vs.&nbsp;Feminino; Atuação em Hospital de Campanha Sim vs.&nbsp;Não).</p>
+<p><strong>Análise de Variância (ANOVA - Fator Único):</strong><br>
+Aplicada para comparar as médias entre três ou mais populações independentes (ex: Categorias Profissionais, Faixas Etárias, Regiões).</p>
+</div>
+<div class="box-red">
+<ul>
+<li>Nível de significância adotado: <span class="math inline">\(\alpha = 0,05\)</span> (<span class="math inline">\(5\%\)</span>), rejeitando-se a hipótese nula de igualdade quando <span class="math inline">\(p &lt; 0,05\)</span>.</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="resultados" class="title-slide slide level1 center">
+<h1>RESULTADOS</h1>
+
+</section>
+<section id="associação-entre-variáveis-e-escores-médios" class="slide level2">
+<h2>Associação entre Variáveis e Escores Médios</h2>
+<p>Tabela com a distribuição das médias, desvios-padrão (DP) e p-valores obtidos pelos testes estatísticos no estudo (<span class="math inline">\(N = 8.792\)</span>):</p>
+</section>
+<section id="section" class="slide level2 scrollable">
+<h2></h2>
+<div class="cell">
+<div class="cell-output-display">
+<div id="dzkrsonejq" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dzkrsonejq table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#dzkrsonejq thead, #dzkrsonejq tbody, #dzkrsonejq tfoot, #dzkrsonejq tr, #dzkrsonejq td, #dzkrsonejq th {
+  border-style: none;
+}
+
+#dzkrsonejq p {
+  margin: 0;
+  padding: 0;
+}
+
+#dzkrsonejq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#dzkrsonejq .gt_title {
+  color: #333333;
+  font-size: 18px;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#dzkrsonejq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#dzkrsonejq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#dzkrsonejq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#dzkrsonejq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#dzkrsonejq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#dzkrsonejq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#dzkrsonejq .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#dzkrsonejq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#dzkrsonejq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#dzkrsonejq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#dzkrsonejq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#dzkrsonejq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#dzkrsonejq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dzkrsonejq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#dzkrsonejq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#dzkrsonejq .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#dzkrsonejq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dzkrsonejq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#dzkrsonejq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dzkrsonejq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#dzkrsonejq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dzkrsonejq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#dzkrsonejq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#dzkrsonejq .gt_left {
+  text-align: left;
+}
+
+#dzkrsonejq .gt_center {
+  text-align: center;
+}
+
+#dzkrsonejq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#dzkrsonejq .gt_font_normal {
+  font-weight: normal;
+}
+
+#dzkrsonejq .gt_font_bold {
+  font-weight: bold;
+}
+
+#dzkrsonejq .gt_font_italic {
+  font-style: italic;
+}
+
+#dzkrsonejq .gt_super {
+  font-size: 65%;
+}
+
+#dzkrsonejq .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#dzkrsonejq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#dzkrsonejq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#dzkrsonejq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#dzkrsonejq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#dzkrsonejq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#dzkrsonejq .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#dzkrsonejq .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#dzkrsonejq div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top" style="width:100%;" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="gt_heading header">
+<td colspan="7" class="gt_heading gt_title gt_font_normal"><strong>Comparação de Escores Médios de Resiliência, Depressão e Autoeficácia</strong></td>
+</tr>
+<tr class="gt_heading even">
+<td colspan="7" class="gt_heading gt_subtitle gt_font_normal gt_bottom_border">Média (Desvio-Padrão) e p-valores obtidos via Teste t e ANOVA</td>
+</tr>
+<tr class="gt_col_headings gt_spanner_row header">
+<th rowspan="2" id="Categoria" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Grupo</th>
+<th colspan="2" id="**Resiliência**" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+<strong>Resiliência</strong>
+</div></th>
+<th colspan="2" id="**Depressão**" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+<strong>Depressão</strong>
+</div></th>
+<th colspan="2" id="**Autoeficácia**" class="gt_center gt_columns_top_border gt_column_spanner_outer" data-quarto-table-cell-role="th" scope="colgroup"><div class="gt_column_spanner">
+<strong>Autoeficácia</strong>
+</div></th>
+</tr>
+<tr class="gt_col_headings even">
+<th id="Resiliencia_M_DP" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Média (DP)</th>
+<th id="Resiliencia_p" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">p-valor</th>
+<th id="Depressao_M_DP" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Média (DP)</th>
+<th id="Depressao_p" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">p-valor</th>
+<th id="Autoeficacia_M_DP" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Média (DP)</th>
+<th id="Autoeficacia_p" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">p-valor</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<th colspan="7" id="Categoria Profissional" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Categoria Profissional</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" headers="Categoria Profissional  Categoria">Enfermeiro</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Resiliencia_M_DP">12,06 (3,27)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Depressao_M_DP">0,745 (0,019)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Depressao_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Autoeficacia_M_DP">0,683 (0,023)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Autoeficacia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Categoria Profissional  Categoria">Técnico de enfermagem</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Resiliencia_M_DP">12,33 (3,32)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Depressao_M_DP">0,749 (0,020)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Depressao_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Autoeficacia_M_DP">0,680 (0,021)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Autoeficacia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Categoria Profissional  Categoria">Auxiliar de enfermagem</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Resiliencia_M_DP">12,44 (3,21)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Depressao_M_DP">0,748 (0,021)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Depressao_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Categoria Profissional  Autoeficacia_M_DP">0,678 (0,024)</td>
+<td class="gt_row gt_left" headers="Categoria Profissional  Autoeficacia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="7" id="Sexo" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Sexo</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" headers="Sexo  Categoria">Masculino</td>
+<td class="gt_row gt_right" headers="Sexo  Resiliencia_M_DP">12,43 (3,25)</td>
+<td class="gt_row gt_left" headers="Sexo  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Sexo  Depressao_M_DP">0,748 (0,021)</td>
+<td class="gt_row gt_left" headers="Sexo  Depressao_p" style="color: #1D4ED8; font-weight: bold">0,003</td>
+<td class="gt_row gt_right" headers="Sexo  Autoeficacia_M_DP">0,682 (0,020)</td>
+<td class="gt_row gt_left" headers="Sexo  Autoeficacia_p">0,920</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Sexo  Categoria">Feminino</td>
+<td class="gt_row gt_right" headers="Sexo  Resiliencia_M_DP">12,11 (3,29)</td>
+<td class="gt_row gt_left" headers="Sexo  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Sexo  Depressao_M_DP">0,746 (0,019)</td>
+<td class="gt_row gt_left" headers="Sexo  Depressao_p" style="color: #1D4ED8; font-weight: bold">0,003</td>
+<td class="gt_row gt_right" headers="Sexo  Autoeficacia_M_DP">0,682 (0,023)</td>
+<td class="gt_row gt_left" headers="Sexo  Autoeficacia_p">0,920</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="7" id="Faixa Etária" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Faixa Etária</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<td class="gt_row gt_left" headers="Faixa Etária  Categoria">18 a 30 anos</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Resiliencia_M_DP">12,09 (3,29)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Depressao_M_DP">0,746 (0,019)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Depressao_p" style="color: #1D4ED8; font-weight: bold">0,010</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Autoeficacia_M_DP">0,682 (0,022)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Autoeficacia_p">0,620</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Faixa Etária  Categoria">31 a 50 anos</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Resiliencia_M_DP">12,86 (3,20)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Depressao_M_DP">0,748 (0,020)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Depressao_p" style="color: #1D4ED8; font-weight: bold">0,010</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Autoeficacia_M_DP">0,682 (0,022)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Autoeficacia_p">0,620</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Faixa Etária  Categoria">51 anos ou mais</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Resiliencia_M_DP">14,80 (1,64)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Depressao_M_DP">0,734 (0,014)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Depressao_p" style="color: #1D4ED8; font-weight: bold">0,010</td>
+<td class="gt_row gt_right" headers="Faixa Etária  Autoeficacia_M_DP">0,672 (0,020)</td>
+<td class="gt_row gt_left" headers="Faixa Etária  Autoeficacia_p">0,620</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="7" id="Hospital de Campanha" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Hospital de Campanha</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<td class="gt_row gt_left" headers="Hospital de Campanha  Categoria">Não</td>
+<td class="gt_row gt_right" headers="Hospital de Campanha  Resiliencia_M_DP">12,08 (3,29)</td>
+<td class="gt_row gt_left" headers="Hospital de Campanha  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Hospital de Campanha  Depressao_M_DP">0,746 (0,190)</td>
+<td class="gt_row gt_left" headers="Hospital de Campanha  Depressao_p">0,620</td>
+<td class="gt_row gt_right" headers="Hospital de Campanha  Autoeficacia_M_DP">0,681 (0,022)</td>
+<td class="gt_row gt_left" headers="Hospital de Campanha  Autoeficacia_p" style="color: #1D4ED8; font-weight: bold">0,010</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Hospital de Campanha  Categoria">Sim</td>
+<td class="gt_row gt_right" headers="Hospital de Campanha  Resiliencia_M_DP">12,33 (3,39)</td>
+<td class="gt_row gt_left" headers="Hospital de Campanha  Resiliencia_p" style="color: #1D4ED8; font-weight: bold">&lt; 0,001</td>
+<td class="gt_row gt_right" headers="Hospital de Campanha  Depressao_M_DP">0,746 (0,200)</td>
+<td class="gt_row gt_left" headers="Hospital de Campanha  Depressao_p">0,620</td>
+<td class="gt_row gt_right" headers="Hospital de Campanha  Autoeficacia_M_DP">0,683 (0,023)</td>
+<td class="gt_row gt_left" headers="Hospital de Campanha  Autoeficacia_p" style="color: #1D4ED8; font-weight: bold">0,010</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="conclusão" class="title-slide slide level1 center">
+<h1>Conclusão</h1>
+
+</section>
+<section id="síntese-dos-principais-achados" class="slide level2">
+<h2>Síntese dos Principais Achados</h2>
+<div class="box-purple">
+<p><strong>Panorama Psicológico da Enfermagem:</strong></p>
+<ul>
+<li><strong>Prevalência Severa de Vulnerabilidade:</strong> <span class="math inline">\(58,8\%\)</span> (<span class="math inline">\(5.124\)</span>) dos profissionais apresentaram <strong>baixos níveis de resiliência</strong> (<span class="math inline">\(&lt; 13\)</span>), acompanhados de altas médias de sintomas depressivos (<span class="math inline">\(0,74\)</span>).</li>
+<li><strong>Disparidades por Perfil Profissional e Demográfico:</strong>
+<ul>
+<li>Enfermeiros apresentaram maior nível de autoeficácia (<span class="math inline">\(0,683\)</span>) que técnicos e auxiliares, porém menor escore de resiliência (<span class="math inline">\(12,06\)</span>, <span class="math inline">\(p &lt; 0,001\)</span>).</li>
+<li>Profissionais do sexo masculino apresentaram médias estatisticamente maiores para resiliência (<span class="math inline">\(12,43\)</span>) e depressão (<span class="math inline">\(0,748\)</span>) em comparação com o sexo feminino (<span class="math inline">\(p &lt; 0,05\)</span>).</li>
+</ul></li>
+<li><strong>Fatores Protetivos em Ambientes de Crise:</strong> Profissionais atuantes em hospitais de campanha obtiveram escores de resiliência (<span class="math inline">\(12,33\)</span>) e autoeficácia (<span class="math inline">\(0,683\)</span>) significativamente mais elevados (<span class="math inline">\(p &lt; 0,05\)</span>).</li>
+</ul>
+</div>
+</section>
+<section id="importância-dos-testes-de-hipótese-na-pesquisa" class="slide level2">
+<h2>Importância dos Testes de Hipótese na Pesquisa</h2>
+<div class="box-red">
+<p><strong>Rigor Científico e Validação Inferencial:</strong></p>
+<ul>
+<li><strong>Validação de Diferenças Populacionais:</strong> Permitiram confirmar, por meio do Teste <span class="math inline">\(t\)</span> de Student e da ANOVA, que as variações observadas entre grupos não ocorreram ao acaso, mas refletem diferenças reais na população de enfermagem (<span class="math inline">\(p &lt; 0,05\)</span>).</li>
+<li><strong>Tomada de Decisão Baseada em Evidências:</strong> A rejeição formal das hipóteses nulas de igualdade fundamenta a tomada de decisão clínica e administrativa sobre dados estatisticamente confiáveis.</li>
+<li><strong>Identificação de Preditores Significativos:</strong> A aplicação da modelagem inferencial demonstrou que a resiliência é o fator de maior impacto direto na variação dos níveis de depressão (<span class="math inline">\(\beta = 0,254\)</span>; <span class="math inline">\(p &lt; 0,001\)</span>).</li>
+</ul>
+</div>
+</section>
+<section id="contribuição-da-pesquisa-para-a-sociedade" class="slide level2">
+<h2>Contribuição da Pesquisa para a Sociedade</h2>
+<div class="box-blue">
+<p><strong>Aplicações em Saúde Pública e Gestão de Crises:</strong></p>
+<ul>
+<li><strong>Mapeamento de Populações de Risco:</strong> Identifica quais categorias profissionais (como técnicos de enfermagem e enfermeiras do sexo feminino) necessitam de suporte psicológico prioritário.</li>
+<li><strong>Políticas Institucionais de Proteção ao Trabalhador:</strong> Fundamenta a criação de programas permanentes de promoção do autocuidado, redução de jornada exaustiva e fortalecimento da autoeficácia e do suporte emocional nas unidades de saúde.</li>
+<li><strong>Preparação para Futuras Emergências Sanitárias:</strong> Subsidia gestores na elaboração de estratégias de mitigação de danos à saúde mental da linha de frente em cenários pandêmicos ou catástrofes futuras.</li>
+</ul>
+</div>
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="teste_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="teste_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="teste_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="teste_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="teste_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="teste_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="teste_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="teste_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="teste_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="teste_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'convex',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1280,
+
+        height: 720,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 6.0e-2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
