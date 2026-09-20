@@ -1,0 +1,14 @@
+name: atividade_4
+title: Atividade 4
+username: isabelle-costa
+account: isabelle-costa
+server: connect.posit.cloud
+hostUrl: https://api.connect.posit.cloud/v1
+appId: 01a0bb30-7807-5e91-7eb9-db291fb5bced
+bundleId:
+url: https://connect.posit.cloud/isabelle-costa/content/01a0bb30-7807-5e91-7eb9-db291fb5bced
+version: 1
+quarto_version: 1.10.18
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

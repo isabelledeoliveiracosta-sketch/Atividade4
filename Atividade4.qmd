@@ -1,0 +1,315 @@
+---
+title: "**Resiliência, Depressão e Autoeficácia na Enfermagem**"
+subtitle: "**Análise Estatística de Fatores Psicológicos na Pandemia de COVID-19**"
+author: "Isabelle de Oliveira Costa (isabelle_costa@id.uff.br) <br> Ilídio do Nascimento Alves Junior (ilidiojunior@id.uff.br)"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    output-file: index.html
+    css: custom.css
+    self-contained: true
+    embed-resources: true
+    slide-number: true
+    incremental: false
+    transition: none
+    background-transition: convex
+    width: 1280
+    height: 720
+    margin: 0.06
+    auto-stretch: false
+    title-slide-attributes:
+      data-background-image: "Capa31.png"
+      data-background-size: cover
+---
+
+# Introdução
+
+## Sobre o Artigo
+::: box-purple
+**Autores:**
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- Laelson Rochelle Milanês Sousa
+- Raphael Augusto Gir de Carvalho
+- Ana Cristina de Oliveira e Silva
+- Elucir Gir
+:::
+
+::: {.column width="50%"}
+- Pedro Henrique Tertuliano Leoni
+- Carla Aparecida Arena Ventura
+- Renata Karina Reis
+:::
+
+::::
+:::
+
+::: box-purple
+**Instituições Envolvidas**
+
+- Escola de Enfermagem de Ribeirão Preto - Universidade de São Paulo
+- Faculdade de Medicina de Jundiaí
+- Universidade Federal da Paraída - João Pessoa
+:::
+
+
+## Motivação e Objetivos
+
+::: box-purple
+**Motivação da Pesquisa:** 
+
+- A pandemia intensificou a sobrecarga, a escassez de recursos e o risco de transtornos como depressão e burnout na enfermagem.
+- O estudo busca compreender os níveis de resiliência, depressão e autoeficácia nesse contexto.
+:::
+
+::: box-purple
+**Objetivo Geral:**
+
+- Analisar os níveis de **resiliência, depressão e autoeficácia** entre profissionais de enfermagem brasileiros durante a pandemia de COVID-19.
+- Investigar a relação entre **resiliência e autoeficácia** e os níveis de **depressão**.
+:::
+
+## Coleta da Amostra
+
+::: box-purple
+**Como Foi Realizada a Amostra da Pesquisa:**  
+
+- Estudo transversal analítico com dados coletados entre outubro e dezembro de 2020.
+- Formato de questionário eletrônico (*SurveyMonkey*) divulgado em mídias sociais (Facebook, Instagram, Twitter, WhatsApp) e e-mails.
+- Critérios de inclusão: Enfermeiros, técnicos e auxiliares que atuavam na assistência direta à saúde há pelo menos 6 meses.
+
+- Participaram profissionais de enfermagem de **todas as regiões do Brasil**.
+- A amostra final foi de **8.792 profissionais**.
+:::
+
+
+# METODOLOGIA ESTATÍSTICA
+
+## Variáveis Analisadas
+
+::: box-blue
+**1. Variáveis de Desfecho (Psicológicas):**
+
+- **Resiliência:** Escore contínuo obtido pela média simples da Escala Breve de Coping Resiliente.
+- **Depressão:** Escore contínuo (média ponderada do Fator 1 do instrumento QSG-12).
+- **Autoeficácia:** Escore contínuo (média ponderada do Fator 2 do instrumento QSG-12).
+
+**2. Fatores de Exposição (Sociodemográficos e Laborais):**  
+
+- Categoria Profissional, Sexo, Faixa Etária, Região do Brasil, Cor da Pele, Estado Conjugal, Diagnóstico de COVID-19 e Atuação em Hospital de Campanha.
+:::
+
+::: box-blue
+Escala do tipo *Likert* de 5 pontos (1 = "quase nunca" a 5 = "quase sempre") e de 4 pontos (0 = "nem um pouco a 3 = "muito mais que o habitual")
+
+:::
+
+## Instrumentos de Medida
+
+::: box-blue
+
+**Escala Breve de Coping Resiliente**
+
+- 4 itens em escala Likert.
+- Utilizada para obter o escore de resiliência.
+- **Pontuação:** Calculada pela **média simples** dos itens.
+  - Pontuação $< 13$: Indica **baixa resiliência**.
+  - Pontuação $> 17$: Indica **forte resiliência**.
+
+:::
+##
+::: box-blue
+**Questionário de Saúde Geral (QSG-12)**
+
+- 12 itens em escala Likert.
+- Foram obtidos dois fatores:
+  - Depressão (Fator 1)
+  - Autoeficácia (Fator 2)
+  
+:::
+
+
+
+## Testes Inferenciais Aplicados
+
+Foram utilizados:
+
+::: box-red
+**Teste $t$ de Student para Amostras Independentes:** 
+
+Aplicado para comparar as médias de duas populações independentes (ex: Comparação entre Sexo Masculino vs. Feminino; Atuação em Hospital de Campanha Sim vs. Não).
+
+**Análise de Variância (ANOVA - Fator Único):**  
+Aplicada para comparar as médias entre três ou mais populações independentes (ex: Categorias Profissionais, Faixas Etárias, Regiões).
+:::
+
+::: box-red
+- Nível de significância adotado: $\alpha = 0,05$ ($5\%$), rejeitando-se a hipótese nula de igualdade quando $p < 0,05$.
+:::
+
+
+# RESULTADOS
+
+## Associação entre Variáveis e Escores Médios
+
+Tabela com a distribuição das médias, desvios-padrão (DP) e p-valores obtidos pelos testes estatísticos no estudo ($N = 8.792$):
+
+## {.scrollable}
+
+```{r tabela-2-artigo, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(gt)
+
+# Construção da Tabela 2 com T e A como sobrescrito (<sup>T</sup> e <sup>A</sup>)
+dados_tabela2 <- tibble::tribble(
+  ~Variavel, ~Categoria, ~n, ~Resil_Media, ~Resil_DP, ~Resil_p, ~Depress_Media, ~Depress_DP, ~Depress_p, ~Autoef_Media, ~Autoef_DP, ~Autoef_p,
+  
+  # Categoria profissional
+  "Categoria profissional", "Enfermeiro", "5.767", "12,06", "3,27", "< 0,001<sup>A</sup>", "0,745", "0,019", "< 0,001<sup>A</sup>", "0,683", "0,023", "< 0,001<sup>A</sup>",
+  "Categoria profissional", "Técnico de enfermagem", "2.842", "12,33", "3,32", "", "0,749", "0,020", "", "0,680", "0,021", "",
+  "Categoria profissional", "Auxiliar de enfermagem", "183", "12,44", "3,21", "", "0,748", "0,021", "", "0,678", "0,024", "",
+  
+  # Sexo
+  "Sexo", "Masculino", "1.355", "12,43", "3,25", "< 0,001<sup>T</sup>", "0,748", "0,021", "0,003<sup>T</sup>", "0,682", "0,020", "0,92<sup>T</sup>",
+  "Sexo", "Feminino", "7.437", "12,11", "3,29", "", "0,746", "0,019", "", "0,682", "0,023", "",
+  
+  # Faixa etária
+  "Faixa etária", "18 a 30", "7.991", "12,09", "3,29", "< 0,001<sup>A</sup>", "0,746", "0,019", "0,01<sup>A</sup>", "0,682", "0,022", "0,62<sup>A</sup>",
+  "Faixa etária", "31 a 50", "796", "12,86", "3,20", "", "0,748", "0,020", "", "0,682", "0,022", "",
+  "Faixa etária", "51 ou mais", "5", "14,80", "1,64", "", "0,734", "0,014", "", "0,672", "0,020", "",
+  
+  # Região do Brasil
+  "Região do Brasil", "Nordeste", "2.643", "12,27", "3,33", "< 0,001<sup>A</sup>", "0,747", "0,019", "0,012<sup>A</sup>", "0,682", "0,022", "0,369<sup>A</sup>",
+  "Região do Brasil", "Norte", "1.328", "12,40", "3,34", "", "0,746", "0,019", "", "0,681", "0,021", "",
+  "Região do Brasil", "Centro-Oeste", "1.578", "12,11", "3,26", "", "0,746", "0,020", "", "0,682", "0,022", "",
+  "Região do Brasil", "Sudeste", "2.460", "11,98", "3,29", "", "0,745", "0,020", "", "0,682", "0,023", "",
+  "Região do Brasil", "Sul", "783", "12,02", "3,06", "", "0,746", "0,019", "", "0,681", "0,021", "",
+  
+  # Cor da pele
+  "Cor da pele", "Branca", "3.943", "12,07", "3,26", "0,1<sup>A</sup>", "0,746", "0,019", "0,22<sup>A</sup>", "0,682", "0,023", "0,28<sup>A</sup>",
+  "Cor da pele", "Preta", "806", "12,35", "3,37", "", "0,745", "0,020", "", "0,682", "0,021", "",
+  "Cor da pele", "Parda", "3.917", "12,20", "3,31", "", "0,746", "0,020", "", "0,682", "0,022", "",
+  "Cor da pele", "Amarela", "126", "12,26", "2,86", "", "0,745", "0,018", "", "0,679", "0,023", "",
+  
+  # Estado conjugal
+  "Estado conjugal", "Casado/união estável", "4.594", "12,22", "3,27", "0,029<sup>A</sup>", "0,747", "0,019", "< 0,001<sup>A</sup>", "0,681", "0,022", "< 0,001<sup>A</sup>",
+  "Estado conjugal", "Solteiro/divorciado", "4.148", "12,08", "3,30", "", "0,745", "0,020", "", "0,683", "0,023", "",
+  "Estado conjugal", "Viúvo", "50", "12,98", "3,13", "", "0,746", "0,019", "", "0,680", "0,020", "",
+  
+  # Diagnóstico de COVID
+  "Diagnóstico de COVID", "Não", "5.807", "12,12", "3,29", "0,15<sup>T</sup>", "0,746", "0,19", "0,97<sup>T</sup>", "0,682", "0,022", "0,44<sup>T</sup>",
+  "Diagnóstico de COVID", "Sim", "2.985", "12,23", "3,28", "", "0,746", "0,19", "", "0,682", "0,022", "",
+  
+  # Assistência em hospital de campanha
+  "Assistência em hospital de campanha", "Não", "6.089", "12,08", "3,29", "< 0,001<sup>T</sup>", "0,746", "0,19", "0,62<sup>T</sup>", "0,681", "0,022", "0,01<sup>T</sup>",
+  "Assistência em hospital de campanha", "Sim", "2.703", "12,33", "3,39", "", "0,746", "0,20", "", "0,683", "0,023", ""
+)
+
+dados_tabela2 %>%
+  gt(groupname_col = "Variavel") %>%
+  tab_header(
+    title = md("**Tabela 2. Escores médios das escalas (resiliência, depressão e autoeficácia) segundo variáveis demográficas, categoria profissional, diagnóstico de COVID-19 e assistência em hospital de campanha. Brasil, 2021 (n = 8.792).**")
+  ) %>%
+  cols_label(
+    Categoria = "Variáveis",
+    n = "n",
+    Resil_Media = "Média",
+    Resil_DP = "Desvio padrão (DP)",
+    Resil_p = "p",
+    Depress_Media = "Média",
+    Depress_DP = "Desvio padrão (DP)",
+    Depress_p = "p",
+    Autoef_Media = "Média",
+    Autoef_DP = "Desvio padrão (DP)",
+    Autoef_p = "p"
+  ) %>%
+  tab_spanner(
+    label = md("**Resiliência**"),
+    columns = c(Resil_Media, Resil_DP, Resil_p)
+  ) %>%
+  tab_spanner(
+    label = md("**Depressão**"),
+    columns = c(Depress_Media, Depress_DP, Depress_p)
+  ) %>%
+  tab_spanner(
+    label = md("**Autoeficácia**"),
+    columns = c(Autoef_Media, Autoef_DP, Autoef_p)
+  ) %>%
+  fmt_markdown(columns = c(Resil_p, Depress_p, Autoef_p)) %>%
+  tab_style(
+    style = list(cell_text(weight = "bold", color = "#7c3aed")),
+    locations = cells_body(
+      columns = Resil_p,
+      rows = Resil_p %in% c("< 0,001<sup>T</sup>", "< 0,001<sup>A</sup>", "0,029<sup>A</sup>")
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(weight = "bold", color = "#7c3aed")),
+    locations = cells_body(
+      columns = Depress_p,
+      rows = Depress_p %in% c("< 0,001<sup>T</sup>", "< 0,001<sup>A</sup>", "0,003<sup>T</sup>", "0,01<sup>A</sup>", "0,012<sup>A</sup>")
+    )
+  ) %>%
+  tab_style(
+    style = list(cell_text(weight = "bold", color = "#7c3aed")),
+    locations = cells_body(
+      columns = Autoef_p,
+      rows = Autoef_p %in% c("< 0,001<sup>T</sup>", "< 0,001<sup>A</sup>", "0,01<sup>T</sup>")
+    )
+  ) %>%
+  tab_source_note(
+    source_note = html("<b><sup>T</sup> = Teste t de Student. <sup>A</sup> = Anova.</b>")
+  ) %>%
+  # Ajustes de dimensionamento para ocupar a largura total e maior altura do slide
+  tab_options(
+    table.width = pct(100),
+    container.height = px(580),
+    table.font.size = px(15),
+    heading.title.font.size = px(16),
+    column_labels.font.size = px(15),
+    source_notes.font.size = px(14),
+    row_group.font.weight = "bold"
+  )
+```
+
+## Resultados Teste T e ANOVA
+- Houve diferenças estatisticamente significativas nos escores de **resiliência** segundo a categoria profissional, sexo, faixa etária, região, estado conjugal e atuação em hospital de campanha.
+
+- Para **depressão**, foram observadas diferenças segundo a categoria profissional, sexo, faixa etária, região e estado conjugal.
+
+- Para **autoeficácia**, foram observadas diferenças segundo a categoria profissional, estado conjugal e atuação em hospital de campanha.
+
+- Para cor da pele e diagnóstico de COVID-19, não foram observadas diferenças estatisticamente significativas nos três escores.
+
+# Conclusão
+## Síntese dos Principais Achados
+
+::: box-purple
+**Panorama Psicológico da Enfermagem:**
+
+- **Prevalência Severa de Vulnerabilidade:** $58,8\%$ ($5.124$) dos profissionais apresentaram **baixos níveis de resiliência** ($< 13$), acompanhados de altas médias de sintomas depressivos ($0,74$).
+- **Disparidades por Perfil Profissional e Demográfico:**
+  - Enfermeiros apresentaram maior nível de autoeficácia ($0,683$) que técnicos e auxiliares, porém menor escore de resiliência ($12,06$).
+  - Profissionais do sexo masculino apresentaram médias estatisticamente maiores para resiliência ($12,43$) e depressão ($0,748$) em comparação com o sexo feminino.
+- **Fatores Protetivos em Ambientes de Crise:** Profissionais atuantes em hospitais de campanha obtiveram escores de resiliência ($12,33$) e autoeficácia ($0,683$) significativamente mais elevados.
+:::
+
+## Importância dos Testes de Hipótese na Pesquisa
+
+::: box-red
+**Rigor Científico e Validação Inferencial:**
+
+- **Validação de Diferenças Populacionais:** Permitiram confirmar, por meio do Teste $t$ de Student e da ANOVA, que as variações observadas entre grupos não ocorreram ao acaso, mas refletem diferenças reais na população de enfermagem.
+- **Tomada de Decisão Baseada em Evidências:** A rejeição formal das hipóteses nulas de igualdade fundamenta a tomada de decisão clínica e administrativa sobre dados estatisticamente confiáveis.
+:::
+
+## Contribuição da Pesquisa para a Sociedade
+
+::: box-blue
+**Aplicações em Saúde Pública e Gestão de Crises:**
+
+- **Mapeamento de Populações de Risco:** Identifica quais categorias profissionais (como técnicos de enfermagem e enfermeiras do sexo feminino) necessitam de suporte psicológico prioritário.
+- **Políticas Institucionais de Proteção ao Trabalhador:** Fundamenta a criação de programas permanentes de promoção do autocuidado, redução de jornada exaustiva e fortalecimento da autoeficácia e do suporte emocional nas unidades de saúde.
+- **Preparação para Futuras Emergências Sanitárias:** Subsidia gestores na elaboração de estratégias de mitigação de danos à saúde mental da linha de frente em cenários pandêmicos ou catástrofes futuras.

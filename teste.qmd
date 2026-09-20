@@ -1,0 +1,235 @@
+---
+title: "**Resiliência, Depressão e Autoeficácia na Enfermagem**"
+subtitle: "**Análise Estatística de Fatores Psicológicos na Pandemia de COVID-19**"
+author: "Isabelle de Oliveira Costa (isabelle_costa@id.uff.br) <br> Ilídio do Nascimento Alves Junior (ilidiojunior@id.uff.br)"
+institute: "Universidade Federal Fluminense"
+format:
+  revealjs:
+    output-file: index.html
+    css: custom.css
+    slide-number: true
+    incremental: false
+    transition: none
+    background-transition: convex
+    width: 1280
+    height: 720
+    margin: 0.06
+    auto-stretch: false
+    title-slide-attributes:
+      data-background-image: "Capa3.jpg"
+      data-background-size: cover
+---
+
+# INTRODUÇÃO
+
+
+## Motivação e Objetivos
+
+::: box-purple
+**Motivação da Pesquisa:** 
+
+- Alto nível de estresse laboral na enfermagem intensificado pelas adversidades caóticas da pandemia de COVID-19 (como falta de EPIs e sobrecarga operacional).
+- Necessidade de compreender fatores protetivos (resiliência e autoeficácia) contra o adoecimento mental e a depressão na linha de frente.
+:::
+
+::: box-purple
+**Objetivo Geral:**  
+Analisar os níveis de resiliência, depressão e autoeficácia em profissionais de enfermagem no Brasil e avaliar como a resiliência e a autoeficácia impactam os níveis de depressão.
+:::
+
+## Coleta da Amostra
+
+::: box-purple
+**Desenho Amostral e Coleta:**  
+
+- Estudo transversal analítico com dados coletados entre outubro e dezembro de 2020.
+- Formato de questionário eletrônico (*SurveyMonkey*) divulgado em mídias sociais (Facebook, Instagram, Twitter, WhatsApp) e e-mails.
+- Critérios de inclusão: Enfermeiros, técnicos e auxiliares que atuavam na assistência direta à saúde há pelo menos 6 meses.
+
+**Amostra Final:**  
+$N = 8.792$ profissionais de enfermagem em todas as regiões do Brasil
+:::
+
+
+# METODOLOGIA ESTATÍSTICA
+
+## Variáveis Analisadas
+
+::: box-blue
+**1. Variáveis de Desfecho (Psicológicas):**
+
+- **Resiliência:** Escore contínuo obtido pela média simples da Escala Breve de Coping Resiliente.
+- **Depressão:** Escore contínuo (média ponderada do Fator 1 do instrumento QSG-12).
+- **Autoeficácia:** Escore contínuo (média ponderada do Fator 2 do instrumento QSG-12).
+
+**2. Fatores de Exposição (Sociodemográficos e Laborais):**  
+
+- Categoria Profissional, Sexo, Faixa Etária, Região do Brasil, Cor da Pele, Estado Conjugal, Diagnóstico de COVID-19 e Atuação em Hospital de Campanha.
+:::
+
+## Instrumentos de Medida
+
+::: box-blue
+**Escala Breve de Coping Resiliente (BRCS):**
+
+- **Objetivo:** Avaliar a capacidade do indivíduo de lidar com o estresse e se adaptar a situações adversas de forma positiva.
+- **Estrutura:** Composta por **4 itens** com respostas em escala do tipo *Likert* de 5 pontos (1 = "quase nunca" a 5 = "quase sempre").
+- **Pontuação:** Calculada pela **média simples** dos itens.
+  - Pontuação $< 13$: Indica **baixa resiliência**.
+  - Pontuação $> 17$: Indica **forte resiliência**.
+  
+:::
+
+## Instrumentos de Medida
+
+::: box-blue
+**Questionário de Saúde Geral (QSG-12):**
+
+- **Objetivo:** Avaliar a saúde mental geral e rastrear sintomas psiquiátricos não psicóticos.
+- **Estrutura:** Versão reduzida com **12 itens** aplicados em escala *Likert* de 4 pontos (0 = "nem um pouco" a 3 = "muito mais que o habitual").
+- **Estrutura Fatorial:** No estudo, a Análise Fatorial Exploratória (AFE) extraiu 2 fatores oblíquos com médias ponderadas:
+  - **Fator 1 (Depressão):** Composto por 6 itens (itens 2, 5, 6, 9, 10 e 11).
+  - **Fator 2 (Autoeficácia):** Composto por 6 itens (itens 1, 3, 4, 7, 8 e 12).
+  
+:::
+
+## Testes Inferenciais Aplicados
+
+Foram utilizados:
+
+::: box-red
+**Teste $t$ de Student para Amostras Independentes:** 
+
+Aplicado para comparar as médias de duas populações independentes (ex: Comparação entre Sexo Masculino vs. Feminino; Atuação em Hospital de Campanha Sim vs. Não).
+
+**Análise de Variância (ANOVA - Fator Único):**  
+Aplicada para comparar as médias entre três ou mais populações independentes (ex: Categorias Profissionais, Faixas Etárias, Regiões).
+:::
+
+::: box-red
+- Nível de significância adotado: $\alpha = 0,05$ ($5\%$), rejeitando-se a hipótese nula de igualdade quando $p < 0,05$.
+:::
+
+
+# RESULTADOS
+
+## Associação entre Variáveis e Escores Médios
+
+Tabela com a distribuição das médias, desvios-padrão (DP) e p-valores obtidos pelos testes estatísticos no estudo ($N = 8.792$):
+
+## {.scrollable}
+
+```{r tabela-resultados, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr)
+library(gt)
+
+dados_artigo <- tibble::tribble(
+  ~Variavel, ~Categoria, ~Resiliencia_M_DP, ~Resiliencia_p, ~Depressao_M_DP, ~Depressao_p, ~Autoeficacia_M_DP, ~Autoeficacia_p,
+  "Categoria Profissional", "Enfermeiro", "12,06 (3,27)", "< 0,001", "0,745 (0,019)", "< 0,001", "0,683 (0,023)", "< 0,001",
+  "Categoria Profissional", "Técnico de enfermagem", "12,33 (3,32)", "< 0,001", "0,749 (0,020)", "< 0,001", "0,680 (0,021)", "< 0,001",
+  "Categoria Profissional", "Auxiliar de enfermagem", "12,44 (3,21)", "< 0,001", "0,748 (0,021)", "< 0,001", "0,678 (0,024)", "< 0,001",
+  "Sexo", "Masculino", "12,43 (3,25)", "< 0,001", "0,748 (0,021)", "0,003", "0,682 (0,020)", "0,920",
+  "Sexo", "Feminino", "12,11 (3,29)", "< 0,001", "0,746 (0,019)", "0,003", "0,682 (0,023)", "0,920",
+  "Faixa Etária", "18 a 30 anos", "12,09 (3,29)", "< 0,001", "0,746 (0,019)", "0,010", "0,682 (0,022)", "0,620",
+  "Faixa Etária", "31 a 50 anos", "12,86 (3,20)", "< 0,001", "0,748 (0,020)", "0,010", "0,682 (0,022)", "0,620",
+  "Faixa Etária", "51 anos ou mais", "14,80 (1,64)", "< 0,001", "0,734 (0,014)", "0,010", "0,672 (0,020)", "0,620",
+  "Hospital de Campanha", "Não", "12,08 (3,29)", "< 0,001", "0,746 (0,190)", "0,620", "0,681 (0,022)", "0,010",
+  "Hospital de Campanha", "Sim", "12,33 (3,39)", "< 0,001", "0,746 (0,200)", "0,620", "0,683 (0,023)", "0,010"
+)
+
+dados_artigo %>%
+  gt(groupname_col = "Variavel") %>%
+  tab_header(
+    title = md("**Comparação de Escores Médios de Resiliência, Depressão e Autoeficácia**"),
+    subtitle = "Média (Desvio-Padrão) e p-valores obtidos via Teste t e ANOVA"
+  ) %>%
+  cols_label(
+    Categoria = "Grupo",
+    Resiliencia_M_DP = "Média (DP)",
+    Resiliencia_p = "p-valor",
+    Depressao_M_DP = "Média (DP)",
+    Depressao_p = "p-valor",
+    Autoeficacia_M_DP = "Média (DP)",
+    Autoeficacia_p = "p-valor"
+  ) %>%
+  tab_spanner(
+    label = md("**Resiliência**"),
+    columns = c(Resiliencia_M_DP, Resiliencia_p)
+  ) %>%
+  tab_spanner(
+    label = md("**Depressão**"),
+    columns = c(Depressao_M_DP, Depressao_p)
+  ) %>%
+  tab_spanner(
+    label = md("**Autoeficácia**"),
+    columns = c(Autoeficacia_M_DP, Autoeficacia_p)
+  ) %>%
+  # Destacar p-valores significativos de Resiliência (< 0,05) em negrito e cor azul
+  tab_style(
+    style = list(
+      cell_text(weight = "bold", color = "#1D4ED8")
+    ),
+    locations = cells_body(
+      columns = Resiliencia_p,
+      rows = Resiliencia_p != "0,920" & Resiliencia_p != "0,620"
+    )
+  ) %>%
+  # Destacar p-valores significativos de Depressão (< 0,05) em negrito e cor azul
+  tab_style(
+    style = list(
+      cell_text(weight = "bold", color = "#1D4ED8")
+    ),
+    locations = cells_body(
+      columns = Depressao_p,
+      rows = Depressao_p %in% c("< 0,001", "0,003", "0,010")
+    )
+  ) %>%
+  # Destacar p-valores significativos de Autoeficácia (< 0,05) em negrito e cor azul
+  tab_style(
+    style = list(
+      cell_text(weight = "bold", color = "#1D4ED8")
+    ),
+    locations = cells_body(
+      columns = Autoeficacia_p,
+      rows = Autoeficacia_p %in% c("< 0,001", "0,010")
+    )
+  ) %>%
+  tab_options(
+    table.font.size = px(14),
+    heading.title.font.size = px(18),
+    column_labels.font.size = px(15)
+  )
+```
+
+# Conclusão
+## Síntese dos Principais Achados
+
+::: box-purple
+**Panorama Psicológico da Enfermagem:**
+
+- **Prevalência Severa de Vulnerabilidade:** $58,8\%$ ($5.124$) dos profissionais apresentaram **baixos níveis de resiliência** ($< 13$), acompanhados de altas médias de sintomas depressivos ($0,74$).
+- **Disparidades por Perfil Profissional e Demográfico:**
+  - Enfermeiros apresentaram maior nível de autoeficácia ($0,683$) que técnicos e auxiliares, porém menor escore de resiliência ($12,06$, $p < 0,001$).
+  - Profissionais do sexo masculino apresentaram médias estatisticamente maiores para resiliência ($12,43$) e depressão ($0,748$) em comparação com o sexo feminino ($p < 0,05$).
+- **Fatores Protetivos em Ambientes de Crise:** Profissionais atuantes em hospitais de campanha obtiveram escores de resiliência ($12,33$) e autoeficácia ($0,683$) significativamente mais elevados ($p < 0,05$).
+:::
+
+## Importância dos Testes de Hipótese na Pesquisa
+
+::: box-red
+**Rigor Científico e Validação Inferencial:**
+
+- **Validação de Diferenças Populacionais:** Permitiram confirmar, por meio do Teste $t$ de Student e da ANOVA, que as variações observadas entre grupos não ocorreram ao acaso, mas refletem diferenças reais na população de enfermagem ($p < 0,05$).
+- **Tomada de Decisão Baseada em Evidências:** A rejeição formal das hipóteses nulas de igualdade fundamenta a tomada de decisão clínica e administrativa sobre dados estatisticamente confiáveis.
+- **Identificação de Preditores Significativos:** A aplicação da modelagem inferencial demonstrou que a resiliência é o fator de maior impacto direto na variação dos níveis de depressão ($\beta = 0,254$; $p < 0,001$).
+:::
+
+## Contribuição da Pesquisa para a Sociedade
+
+::: box-blue
+**Aplicações em Saúde Pública e Gestão de Crises:**
+
+- **Mapeamento de Populações de Risco:** Identifica quais categorias profissionais (como técnicos de enfermagem e enfermeiras do sexo feminino) necessitam de suporte psicológico prioritário.
+- **Políticas Institucionais de Proteção ao Trabalhador:** Fundamenta a criação de programas permanentes de promoção do autocuidado, redução de jornada exaustiva e fortalecimento da autoeficácia e do suporte emocional nas unidades de saúde.
+- **Preparação para Futuras Emergências Sanitárias:** Subsidia gestores na elaboração de estratégias de mitigação de danos à saúde mental da linha de frente em cenários pandêmicos ou catástrofes futuras.
+:::
